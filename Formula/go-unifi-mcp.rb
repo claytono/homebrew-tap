@@ -11,7 +11,7 @@ class GoUnifiMcp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.0/go-unifi-mcp_darwin_amd64.tar.gz"
-      sha256 "a30d5b8c70aa7d8a2b5911d047b995a8638c6f61a9051682b7b005edb66352f3"
+      sha256 "2351f5aa8e021626f7df9ed02a48113a789c4020e42f3c1d4b5340338560d1b5"
 
       def install
         bin.install "go-unifi-mcp"
@@ -19,7 +19,7 @@ class GoUnifiMcp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.0/go-unifi-mcp_darwin_arm64.tar.gz"
-      sha256 "c6187b35863a1527a959755ecadf75aa30c1cdf6e18c0d1a426affdcf61d64fc"
+      sha256 "37ee88194603abffe9b6e80ed6575dd1f3bf0cedf875821163699affdf7413ae"
 
       def install
         bin.install "go-unifi-mcp"
@@ -30,14 +30,14 @@ class GoUnifiMcp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.0/go-unifi-mcp_linux_amd64.tar.gz"
-      sha256 "32e86249c5b6ace6403c916c5e0e5ec728e1db3a96ac8635f37239302d5883c1"
+      sha256 "197c14ac3cc120dd6bd8afa19464da96b7eccd2a4bce41276358d273a0accc8c"
       def install
         bin.install "go-unifi-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.0/go-unifi-mcp_linux_arm64.tar.gz"
-      sha256 "df72316dc708c659e6b3b874c136e2da13e7974a79e64c94010d556020f4a385"
+      sha256 "d7817941bb3fe16eb1c62a7fbab73e4615ce043739589a8e799724ab55fc2817"
       def install
         bin.install "go-unifi-mcp"
       end
