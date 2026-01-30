@@ -5,21 +5,21 @@
 class GoUnifiMcp < Formula
   desc "MCP server for UniFi Network Controller"
   homepage "https://github.com/claytono/go-unifi-mcp"
-  version "0.1.0"
+  version "0.1.1"
   license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.0/go-unifi-mcp_darwin_amd64.tar.gz"
-      sha256 "04cc3ac126cf3adbec69a5657a2ae591d7a766384f2bd1a853a0818d23e8bbb1"
+      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.1/go-unifi-mcp_darwin_amd64.tar.gz"
+      sha256 "2440fccaeacc06be8b86895e0628aec15d71046577c47e8f9dd226202b609e3e"
 
       def install
         bin.install "go-unifi-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.0/go-unifi-mcp_darwin_arm64.tar.gz"
-      sha256 "8eb34f7bb643822b27d4ccbb0d1232863eae19bfe475d6155ec618411d8b6692"
+      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.1/go-unifi-mcp_darwin_arm64.tar.gz"
+      sha256 "3535f7eba541fae30c5b15d269010fb33c131d38c3f41126e75ea9c0fdbc42dd"
 
       def install
         bin.install "go-unifi-mcp"
@@ -29,15 +29,15 @@ class GoUnifiMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.0/go-unifi-mcp_linux_amd64.tar.gz"
-      sha256 "98df4100b8720390279ae2c897fa35c4321f665252d9f767a8028fd4c22179ae"
+      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.1/go-unifi-mcp_linux_amd64.tar.gz"
+      sha256 "40e30a850f97a4cefb67f1d96727332b22a619995399a83e9c3307a767797b3a"
       def install
         bin.install "go-unifi-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.0/go-unifi-mcp_linux_arm64.tar.gz"
-      sha256 "7f4a4fc3d10a6d49b0adcb0a90a9cce32c1c2773d59b359560b442addf9b18d8"
+      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.1.1/go-unifi-mcp_linux_arm64.tar.gz"
+      sha256 "9ee9cf6e1c8825f3f0bc26bfd7c4c6e89e28ebbb85e297144bfd7834a3a74aa8"
       def install
         bin.install "go-unifi-mcp"
       end
