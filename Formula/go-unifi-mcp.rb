@@ -5,23 +5,23 @@
 class GoUnifiMcp < Formula
   desc "MCP server for UniFi Network Controller"
   homepage "https://github.com/claytono/go-unifi-mcp"
-  version "0.2.0"
+  version "0.3.0"
   license "MPL-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.2.0/go-unifi-mcp_darwin_amd64.tar.gz"
-      sha256 "19b29516f3ad40e930f85d6e2b4c3b91d1b816f098016e86ede67465bf39e284"
+      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.3.0/go-unifi-mcp_darwin_amd64.tar.gz"
+      sha256 "820c2bbe7fe18e7f443e6ef14b17956b133563b1157f90d47e6f7f82dca9dc79"
 
-      def install
+      define_method(:install) do
         bin.install "go-unifi-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.2.0/go-unifi-mcp_darwin_arm64.tar.gz"
-      sha256 "c6ee347edfdc33bb6a9c3fbced10cdcde90c6f06845fff50e54ffcb342a39f73"
+      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.3.0/go-unifi-mcp_darwin_arm64.tar.gz"
+      sha256 "cd5a629297c6ee85ec2a3fb98a883febe2613142130e1b8d72e23ba607ab3227"
 
-      def install
+      define_method(:install) do
         bin.install "go-unifi-mcp"
       end
     end
@@ -29,16 +29,16 @@ class GoUnifiMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.2.0/go-unifi-mcp_linux_amd64.tar.gz"
-      sha256 "eb506c511929966f568a4c7608e7f8d29980c79ad97f3fa167a956dae4eb7867"
-      def install
+      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.3.0/go-unifi-mcp_linux_amd64.tar.gz"
+      sha256 "4b64f24da96854043fb984f50fd90115fa86a9dce0221498ff4d10a62a07dff7"
+      define_method(:install) do
         bin.install "go-unifi-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.2.0/go-unifi-mcp_linux_arm64.tar.gz"
-      sha256 "6fe72f43625df824aa4a8c9a01c1c955f5195876e35f76aa92747e977803f8de"
-      def install
+      url "https://github.com/claytono/go-unifi-mcp/releases/download/v0.3.0/go-unifi-mcp_linux_arm64.tar.gz"
+      sha256 "baa28ee046eb81c5705d8b8391777248ff1fae4d4066a7e1c002073dd16a6e04"
+      define_method(:install) do
         bin.install "go-unifi-mcp"
       end
     end
